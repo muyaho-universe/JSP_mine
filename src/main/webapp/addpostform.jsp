@@ -9,7 +9,7 @@
 <body>
 
 <h1>Add New Post</h1>
-<form action="addpost.jsp" method="post">
+<form action="addpost.jsp" method="post" enctype="multipart/form-data">
     <table>
         <tr>
             <td>Title:</td>

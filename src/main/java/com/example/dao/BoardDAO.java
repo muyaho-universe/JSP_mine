@@ -119,6 +119,7 @@ public class BoardDAO {
 			}
 			rs.close();
 		} catch (Exception e) {
+			System.out.printf("에러");
 			e.printStackTrace();
 		} 
 		return list;

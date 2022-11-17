@@ -13,7 +13,7 @@ import java.io.IOException;
 public class FileIO {
     public BoardVO upLoadFile(HttpServletRequest request) {
         BoardVO one = null;
-        String fileName = null;
+        String fileName = "";
         int sizeLimit = 15 * 1024 * 1024;
 
         String path = request.getServletContext().getRealPath("upload");
