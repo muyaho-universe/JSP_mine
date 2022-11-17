@@ -63,7 +63,7 @@
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
-		<td><img src="${pageContext.request.contextPath }/upload/${u.getFileName()}" class="photo"></td>
+		<td><img src="${pageContext.request.contextPath }/upload/${u.getFileName()}" class="photo" width="100px"></td>
 <%--		<td>${pageContext.request.contextPath }/upload/${u.getFileName()}</td>--%>
 		<td>${u.getEditdate()}</td>
 		<td>${u.getRegdate()}</td>
