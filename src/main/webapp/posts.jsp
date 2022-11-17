@@ -2,6 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@page import="com.example.dao.BoardDAO, com.example.bean.BoardVO,java.util.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%
+	BoardDAO boardDAO = new BoardDAO();
+	List<BoardVO> list = boardDAO.getBoardList();
+	request.setAttribute("list",list);
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,11 +42,7 @@
 </head>
 <body>
 <h1>자유게시판</h1>
-<%
-	BoardDAO boardDAO = new BoardDAO();
-	List<BoardVO> list = boardDAO.getBoardList();
-	request.setAttribute("list",list);
-%>
+
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>

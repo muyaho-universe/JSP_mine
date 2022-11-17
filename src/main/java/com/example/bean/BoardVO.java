@@ -4,9 +4,12 @@ import java.util.Date;
 
 public class BoardVO {
     private int seq;
+    private String category;
     private String title;
     private String writer;
     private String content;
+    private String fileName;
+    private Date editdate;
     private Date regdate;
     private int cnt;
 
@@ -56,5 +59,21 @@ public class BoardVO {
 
     public void setCnt(int cnt) {
         this.cnt = cnt;
+    }
+
+    public void setEditdate(Date editdate) {
+        this.editdate = editdate;
+    }
+
+    public Date getEditdate() {
+        return editdate;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }
