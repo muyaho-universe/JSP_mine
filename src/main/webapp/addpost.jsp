@@ -4,20 +4,16 @@
 <%@ page import="com.example.fileIO.FileIO" %>
 <%@ page import="com.example.bean.BoardVO" %>
 
-<% request.setCharacterEncoding("utf-8"); %>
-
-<jsp:useBean id="u" class="com.example.bean.BoardVO" />
-<jsp:setProperty property="*" name="u"/>
-
 <%
+    request.setCharacterEncoding("utf-8");
 	BoardDAO boardDAO = new BoardDAO();
 	FileIO fileIO = new FileIO();
 	BoardVO boardVO = fileIO.uploadPhoto(request);
-//	System.out.println(boardVO);
+	System.out.println(boardVO);
 
 	int i = boardDAO.insertBoard(boardVO);
 	String msg = "데이터 추가 성공 !";
-	if(i == 0) msg = "[에러] 데이터 추가 ";
+	if(i == 0) msg = "[에러] 데이터 추가 " + boardVO;
 %>
 
 <script>

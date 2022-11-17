@@ -16,10 +16,10 @@ public class FileIO {
         int sizeLimit = 15*1024*1024; //파일 크기(15 MB)
 
         String realPath = request.getServletContext().getRealPath("upload");
-        System.out.println(realPath);
+//        System.out.println(realPath);
 
         File dir = new File(realPath);
-        if(!dir.exists()) dir.mkdirs();
+        if(!dir.exists()) dir.mkdir();
 
         BoardVO one = null;
         MultipartRequest multipartRequest = null;
@@ -36,9 +36,8 @@ public class FileIO {
             one.setTitle(multipartRequest.getParameter("title"));
             one.setWriter(multipartRequest.getParameter("writer"));
             one.setContent(multipartRequest.getParameter("content"));
-            one.setFileName(fileName);
-//            System.out.println("파일명!! " + fileName);
-            if (sid != null && sid.equals("")) {
+
+            if (sid != null && !sid.equals("")) {
                 BoardDAO boardDAO = new BoardDAO();
                 String oldFileName = boardDAO.getPhotoFilename(Integer.parseInt(sid));
 
@@ -50,7 +49,7 @@ public class FileIO {
             one.setFileName(fileName);
 
         } catch (IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 //        System.out.println("");
         return one;

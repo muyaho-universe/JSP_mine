@@ -55,7 +55,7 @@
             <td><textarea cols="50" rows="5" name="content"><%= u.getContent()%></textarea></td>
         </tr>
         <tr>
-            <td colspan="2"><input type='file' name=photo><input type="submit" value="Edit Post"/>
+            <td colspan="2"><input type='file' name="photo"><input type="submit" value="Edit Post"/>
 
 
                 <input type="button" value="Cancel" onclick="history.back()"/></td>
