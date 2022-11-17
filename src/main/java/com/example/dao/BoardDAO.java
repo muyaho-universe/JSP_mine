@@ -63,7 +63,9 @@ public class BoardDAO {
         try {
             conn = JDBCUtil2.getConnection();
             stmt = conn.prepareStatement(BOARD_UPDATE);
-            stmt.setString(1, vo.getCategory());
+//            if(vo.getCategory().equals(""))
+//            else stmt.setString(1, vo.getCategory());
+            stmt.setString(1, "");
             stmt.setString(2, vo.getTitle());
             stmt.setString(3, vo.getWriter());
             stmt.setString(4, vo.getContent());

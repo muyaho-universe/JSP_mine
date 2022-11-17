@@ -1,14 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="com.example.dao.BoardDAO"%>
-
-<% request.setCharacterEncoding("utf-8"); %>
-
-<jsp:useBean id="u" class="com.example.bean.BoardVO" />
-<jsp:setProperty property="*" name="u"/>
+<%@ page import="com.example.bean.BoardVO" %>
+<%@ page import="com.example.fileIO.FileIO" %>
 
 <%
+	request.setCharacterEncoding("utf-8");
 	BoardDAO boardDAO = new BoardDAO();
+	FileIO fileIO = new FileIO();
+
+	BoardVO u = fileIO.uploadPhoto(request);
+	System.out.println(u);
 	int i=boardDAO.updateBoard(u);
-	response.sendRedirect("posts.jsp");
+
+	String msg = "데이터 편집 성공 !";
+	if(i == 0) msg = "[에러] 데이터 편집 ";
 %>
+
+<script>
+	alert('<%=msg%>');
+	location.href='posts.jsp';
+</script>
