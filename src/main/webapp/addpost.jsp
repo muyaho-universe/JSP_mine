@@ -12,8 +12,8 @@
 <%
 	BoardDAO boardDAO = new BoardDAO();
 	FileIO fileIO = new FileIO();
-	BoardVO boardVO = fileIO.upLoadFile(request);
-	System.out.println(boardVO);
+	BoardVO boardVO = fileIO.uploadPhoto(request);
+//	System.out.println(boardVO);
 
 	int i = boardDAO.insertBoard(boardVO);
 	String msg = "데이터 추가 성공 !";

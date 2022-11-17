@@ -11,20 +11,21 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileIO {
-    public BoardVO upLoadFile(HttpServletRequest request) {
+    public BoardVO uploadPhoto(HttpServletRequest request) {
+        String fileName = ""; //업로드 되는 파일 이름 저장용
+        int sizeLimit = 15*1024*1024; //파일 크기(15 MB)
+
+        String realPath = request.getServletContext().getRealPath("upload");
+        System.out.println(realPath);
+
+        File dir = new File(realPath);
+        if(!dir.exists()) dir.mkdirs();
+
         BoardVO one = null;
-        String fileName = "";
-        int sizeLimit = 15 * 1024 * 1024;
-
-        String path = request.getServletContext().getRealPath("upload");
-
-        File dir = new File(path);
-        if (!dir.exists()) dir.mkdirs();
-
         MultipartRequest multipartRequest = null;
 
         try {
-            multipartRequest = new MultipartRequest(request, path, sizeLimit, "utf-8", new DefaultFileRenamePolicy());
+            multipartRequest = new MultipartRequest(request, realPath, sizeLimit, "utf-8", new DefaultFileRenamePolicy());
             fileName = multipartRequest.getFilesystemName("photo");
 
             one = new BoardVO();
@@ -51,6 +52,7 @@ public class FileIO {
         } catch (IOException e) {
             System.out.println(e);
         }
+//        System.out.println("");
         return one;
     }
 
