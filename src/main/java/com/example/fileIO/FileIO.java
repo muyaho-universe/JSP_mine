@@ -35,8 +35,8 @@ public class FileIO {
             one.setTitle(multipartRequest.getParameter("title"));
             one.setWriter(multipartRequest.getParameter("writer"));
             one.setContent(multipartRequest.getParameter("content"));
-            one.setFileName(multipartRequest.getParameter("fileName"));
-
+            one.setFileName(fileName);
+//            System.out.println("파일명!! " + fileName);
             if (sid != null && sid.equals("")) {
                 BoardDAO boardDAO = new BoardDAO();
                 String oldFileName = boardDAO.getPhotoFilename(Integer.parseInt(sid));

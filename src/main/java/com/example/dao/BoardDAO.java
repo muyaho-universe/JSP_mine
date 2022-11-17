@@ -25,6 +25,7 @@ public class BoardDAO {
 	PreparedStatement preparedStatement = null;
 	ResultSet resultSet = null;
 
+
 	public int insertBoard(BoardVO vo) {
 		System.out.println("===> JDBC로 insertBoard() 기능 처리");
 		try {
@@ -110,16 +111,18 @@ public class BoardDAO {
 			while(rs.next()) {
 				BoardVO one = new BoardVO();
 				one.setSeq(rs.getInt("seq"));
+				one.setCategory(rs.getString("category"));
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
+				one.setFileName(rs.getString("fileName"));
 				one.setRegdate(rs.getDate("regdate"));
+//				one.setEditdate(rs.getDate("editdate"));
 				one.setCnt(rs.getInt("cnt"));
 				list.add(one);
 			}
 			rs.close();
 		} catch (Exception e) {
-			System.out.printf("에러");
 			e.printStackTrace();
 		} 
 		return list;

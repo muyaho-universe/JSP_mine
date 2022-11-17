@@ -64,6 +64,7 @@
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
 		<td><img src="${pageContext.request.contextPath }/upload/${u.getFileName()}" class="photo"></td>
+<%--		<td>${pageContext.request.contextPath }/upload/${u.getFileName()}</td>--%>
 		<td>${u.getEditdate()}</td>
 		<td>${u.getRegdate()}</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
