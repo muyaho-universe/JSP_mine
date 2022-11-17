@@ -14,7 +14,7 @@
 	FileIO fileIO = new FileIO();
 	BoardVO boardVO = fileIO.upLoadFile(request);
 
-	int i = boardDAO.insertBoard(u);
+	int i = boardDAO.insertBoard(boardVO);
 	String msg = "데이터 추가 성공 !";
 	if(i == 0) msg = "[에러] 데이터 추가 ";
 %>
