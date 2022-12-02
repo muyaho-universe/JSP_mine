@@ -15,6 +15,7 @@
     String id = request.getParameter("id");
     BoardVO u = boardDAO.getBoard(Integer.parseInt(id));
     request.setAttribute("vo", u);
+
 %>
 
 <h1>Edit Form</h1>

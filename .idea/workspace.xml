@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="946569ee-6583-4189-a795-e1a28d04ce8a" name="Changes" comment="feat: BoardVO.java">
+    <list default="true" id="946569ee-6583-4189-a795-e1a28d04ce8a" name="Changes" comment="done done!!">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_mine_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_mine_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bean/BoardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -142,7 +143,17 @@
       <updated>1667871518038</updated>
       <workItem from="1667871519611" duration="1348000" />
       <workItem from="1668475959051" duration="1161000" />
-      <workItem from="1668646006791" duration="2168000" />
+      <workItem from="1668646006791" duration="3425000" />
+      <workItem from="1668663863080" duration="3015000" />
+      <workItem from="1668668267804" duration="235000" />
+      <workItem from="1668668551900" duration="9152000" />
+      <workItem from="1668691826307" duration="311000" />
+      <workItem from="1668692884317" duration="1549000" />
+      <workItem from="1668694774338" duration="200000" />
+      <workItem from="1668697269106" duration="92000" />
+      <workItem from="1668697595209" duration="1752000" />
+      <workItem from="1668747765148" duration="174000" />
+      <workItem from="1669943871487" duration="2378000" />
     </task>
     <task id="LOCAL-00001" summary="Working on add dependency">
       <created>1667872316471</created>
@@ -172,7 +183,154 @@
       <option name="project" value="LOCAL" />
       <updated>1668648150631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: BoardDAO.java new  method">
+      <created>1668649116820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668649116820</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: Create FileIO.java">
+      <created>1668649340510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668649340510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: Update new dependency">
+      <created>1668649749175</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668649749175</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: working on FileIO.java">
+      <created>1668650210509</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668650210509</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Complete FileIO.java">
+      <created>1668664763584</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668664763584</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: Update addpostform.jsp">
+      <created>1668665034943</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668665034943</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: Update addpost.jsp">
+      <created>1668665335365</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668665335365</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: Update post.jsp">
+      <created>1668665450687</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668665450687</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: Create fileupload.jsp">
+      <created>1668666060197</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668666060197</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: Create fileform.jsp">
+      <created>1668666189656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668666189656</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: Update fileform.jsp">
+      <created>1668667180303</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668667180303</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: Update file delete part">
+      <created>1668667280547</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668667280547</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat:...">
+      <created>1668667453922</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668667453922</updated>
+    </task>
+    <task id="LOCAL-00018" summary="working on it">
+      <created>1668683734901</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668683734901</updated>
+    </task>
+    <task id="LOCAL-00019" summary="photo isn't shown">
+      <created>1668685238670</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668685238670</updated>
+    </task>
+    <task id="LOCAL-00020" summary="English only">
+      <created>1668687039685</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668687039685</updated>
+    </task>
+    <task id="LOCAL-00021" summary="English only">
+      <created>1668687050015</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668687050015</updated>
+    </task>
+    <task id="LOCAL-00022" summary="working on edit">
+      <created>1668687452129</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668687452129</updated>
+    </task>
+    <task id="LOCAL-00023" summary="yaho">
+      <created>1668688521481</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668688521481</updated>
+    </task>
+    <task id="LOCAL-00024" summary="done">
+      <created>1668689430257</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668689430257</updated>
+    </task>
+    <task id="LOCAL-00025" summary="done done!!">
+      <created>1668694519845</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668694519845</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +352,26 @@
     <MESSAGE value="Working on merging from professor" />
     <MESSAGE value="chore: top.jsp와 bottom.jsp 생성" />
     <MESSAGE value="feat: BoardVO.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: BoardVO.java" />
+    <MESSAGE value="feat: BoardDAO.java new  method" />
+    <MESSAGE value="feat: Create FileIO.java" />
+    <MESSAGE value="feat: Update new dependency" />
+    <MESSAGE value="feat: working on FileIO.java" />
+    <MESSAGE value="feat: Complete FileIO.java" />
+    <MESSAGE value="feat: Update addpostform.jsp" />
+    <MESSAGE value="feat: Update addpost.jsp" />
+    <MESSAGE value="feat: Update post.jsp" />
+    <MESSAGE value="feat: Create fileupload.jsp" />
+    <MESSAGE value="feat: Create fileform.jsp" />
+    <MESSAGE value="feat: Update fileform.jsp" />
+    <MESSAGE value="feat: Update file delete part" />
+    <MESSAGE value="feat:..." />
+    <MESSAGE value="working on it" />
+    <MESSAGE value="photo isn't shown" />
+    <MESSAGE value="English only" />
+    <MESSAGE value="working on edit" />
+    <MESSAGE value="yaho" />
+    <MESSAGE value="done" />
+    <MESSAGE value="done done!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="done done!!" />
   </component>
 </project>
